@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5QylOfb4lc/KI9NoUp6Mnw2BJCLnXYraJalFz2h6OL8=",
+  "Source": "AudioAppWebApi",
+  "BasePath": "_content/AudioAppWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

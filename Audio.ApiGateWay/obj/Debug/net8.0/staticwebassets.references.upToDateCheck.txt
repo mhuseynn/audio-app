@@ -1,0 +1,2 @@
+C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebApi\obj\Debug\net8.0\staticwebassets.build.json
