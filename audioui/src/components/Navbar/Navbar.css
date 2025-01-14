@@ -1,0 +1,153 @@
+/* .header {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  position: relative;
+  margin: 20px;
+  font-size: x-large;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #75f4b7;
+  top: 100%;
+  left: 0;
+  transition: 0.3s;
+  width: 0;
+  margin-top: 10px;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+  background-image: url("./src/assets/logo.jfif");
+  background-position: center;
+  object-fit: contain;
+  width: 100px;
+}
+ */
+
+/* Desktop Styles */
+.header {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 40px 10%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.navbar a {
+  position: relative;
+  margin: 20px;
+  font-size: x-large;
+  font-weight: 500;
+  margin-left: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #75f4b7;
+  top: 100%;
+  left: 0;
+  transition: 0.3s;
+  width: 0;
+  margin-top: 10px;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.logo {
+  background-image: url("./src/assets/logo2.jfif");
+  background-position: center;
+  width: 80px;
+  height: 20px;
+
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Styles for Mobile */
+/* @media (max-width: 768px) {
+  .header-ham {
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black; 
+  }
+
+  .nav-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar.active {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: large;
+    margin-left: 0;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+  }
+} */

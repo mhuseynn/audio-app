@@ -48,6 +48,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioAppWebApi", "Audio.WebApi\Presentation\AudioAppWebApi\AudioAppWebApi.csproj", "{65B04380-A953-4B7A-8A31-33D82CF69CA1}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "audioui", "AudioUI\audioui.esproj", "{4449B2AF-6712-4B92-86AE-D9518F859DBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,12 @@ Global
 		{65B04380-A953-4B7A-8A31-33D82CF69CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B04380-A953-4B7A-8A31-33D82CF69CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B04380-A953-4B7A-8A31-33D82CF69CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
