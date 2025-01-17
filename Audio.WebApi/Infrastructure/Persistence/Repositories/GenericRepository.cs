@@ -39,6 +39,8 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity, 
 
     public async Task SaveAllChangesAsync()
     {
+        
+   
         await _context.SaveChangesAsync();
     }
 

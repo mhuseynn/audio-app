@@ -159,7 +159,6 @@ C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.AssemblyInfoInputs.cache
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.AssemblyInfo.cs
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.csproj.CoreCompileInputs.cache
-C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\scopedcss\bundle\AudioAppWebApi.styles.css
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\staticwebassets.build.json
@@ -178,3 +177,6 @@ C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.pdb
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.genruntimeconfig.cache
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\ref\AudioAppWebApi.dll
+C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Presentation\AudioAppWebApi\obj\Debug\net8.0\AudioAppWebApi.sourcelink.json

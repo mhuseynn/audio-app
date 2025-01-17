@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "AudioAppWebApi.Controllers.AudioController",
+    "Method": "GetAllAudios",
+    "RelativePath": "api/Audio/GetAllAudios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AudioAppWebApi.Controllers.AudioController",
+    "Method": "UploadAudio",
+    "RelativePath": "api/Audio/UploadAudio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uploadDTO",
+        "Type": "Domain.DTOs.AddAudioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

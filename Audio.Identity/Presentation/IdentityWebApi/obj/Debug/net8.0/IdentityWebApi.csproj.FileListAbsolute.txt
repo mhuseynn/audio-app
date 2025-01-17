@@ -188,3 +188,4 @@ C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebAp
 C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebApi\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Presentation\IdentityWebApi\obj\Debug\net8.0\IdentityWebApi.sourcelink.json

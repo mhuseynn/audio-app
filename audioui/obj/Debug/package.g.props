@@ -9,9 +9,12 @@
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonDependenciesCloudinaryReact Condition="$(PackageJsonDependenciesCloudinaryReact) == ''">^1.13.1</PackageJsonDependenciesCloudinaryReact>
+    <PackageJsonDependenciesCloudinaryUrlGen Condition="$(PackageJsonDependenciesCloudinaryUrlGen) == ''">^1.21.0</PackageJsonDependenciesCloudinaryUrlGen>
     <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.9</PackageJsonDependenciesAxios>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.3.1</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.3.1</PackageJsonDependenciesReactDom>
+    <PackageJsonDependenciesReactDropzone Condition="$(PackageJsonDependenciesReactDropzone) == ''">^14.3.5</PackageJsonDependenciesReactDropzone>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.1.1</PackageJsonDependenciesReactRouterDom>
     <PackageJsonDependenciesRoute Condition="$(PackageJsonDependenciesRoute) == ''">^0.2.5</PackageJsonDependenciesRoute>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.17.0</PackageJsonDevdependenciesEslintJs>

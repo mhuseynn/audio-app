@@ -15,11 +15,11 @@ public class AudioDbContext : DbContext
     }
 
 
-    public virtual DbSet<Audio> Audios { get; set; }
+    public DbSet<Audio> Audios { get; set; }
 
-    public virtual DbSet<Playlist> Playlists { get; set; }
+    public DbSet<Playlist> Playlists { get; set; }
 
-    public virtual DbSet<Comment> Comments { get; set; }
+    public DbSet<Comment> Comments { get; set; }
 
-    public virtual DbSet<Favorite> Favorites { get; set; }
+    public DbSet<Favorite> Favorites { get; set; }
 }

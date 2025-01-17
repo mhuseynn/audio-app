@@ -30,21 +30,18 @@ namespace Persistence.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Artist")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FPath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("FavoriteId")
+                    b.Property<int?>("FavoriteId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PlaylistId")
+                    b.Property<int?>("PlaylistId")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -122,15 +119,11 @@ namespace Persistence.Migrations
                 {
                     b.HasOne("Domain.Entities.Concretes.Favorite", "Favorite")
                         .WithMany("Audios")
-                        .HasForeignKey("FavoriteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("FavoriteId");
 
                     b.HasOne("Domain.Entities.Concretes.Playlist", "Playlist")
                         .WithMany("Audios")
-                        .HasForeignKey("PlaylistId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PlaylistId");
 
                     b.Navigation("Favorite");
 

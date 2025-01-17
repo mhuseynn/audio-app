@@ -11,3 +11,5 @@ C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Core\Domain\obj\Debug\net8.0
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Core\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Core\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
 C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Core\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Core\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Huseyn\source\repos\Audio.App\Audio.WebApi\Core\Domain\obj\Debug\net8.0\Domain.sourcelink.json

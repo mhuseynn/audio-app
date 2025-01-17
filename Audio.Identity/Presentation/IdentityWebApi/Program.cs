@@ -39,9 +39,9 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 //Add Identity
 builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options =>
 {
-    options.Password.RequireDigit = true;
+    options.Password.RequireDigit = false;
     options.Password.RequiredLength = 8;
-    options.User.RequireUniqueEmail = true;
+    options.User.RequireUniqueEmail = false;
 })
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();

@@ -19,7 +19,7 @@ public class UserService : IUserService
 
     public async Task<string> AddAsync(LoginDTO addUser)
     {
-        var appUser = new AppUser
+        AppUser appUser = new AppUser
         {
             UserName = addUser.Email,
             Email = addUser.Email,

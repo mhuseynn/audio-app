@@ -53,7 +53,7 @@ public class AuthService : IAuthService
         ////////////////////////
         var result = await _userService.AddAsync(registerDTO);
 
-        return "ok";
+        return result.ToString();
     }
 
 }

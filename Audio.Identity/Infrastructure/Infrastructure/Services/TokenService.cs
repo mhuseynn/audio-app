@@ -26,8 +26,6 @@ public class TokenService : ITokenService
     {
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]!));
 
-        var roles = _userManager.GetRolesAsync(user);
-
         var tokenDescription = new SecurityTokenDescriptor()
         {
             Expires = DateTime.UtcNow.AddMinutes(1),
@@ -37,7 +35,6 @@ public class TokenService : ITokenService
             
             Subject = new ClaimsIdentity(new Claim[] {
                new Claim(ClaimTypes.Name, user.UserName!),
-               new Claim(ClaimTypes.Role, roles.Result.First()),
                new Claim(ClaimTypes.Email, user.Email!)
             })
         };

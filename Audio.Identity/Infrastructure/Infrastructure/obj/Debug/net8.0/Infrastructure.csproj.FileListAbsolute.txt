@@ -36,3 +36,4 @@ C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Infrastructure\Infrastruct
 C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Infrastructure\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Infrastructure\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Infrastructure\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\Huseyn\source\repos\Audio.App\Audio.Identity\Infrastructure\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

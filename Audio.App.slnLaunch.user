@@ -9,6 +9,10 @@
       {
         "Path": "Audio.ApiGateWay\\Audio.ApiGateWay.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "Audio.WebApi\\Presentation\\AudioAppWebApi\\AudioAppWebApi.csproj",
+        "Action": "Start"
       }
     ]
   }

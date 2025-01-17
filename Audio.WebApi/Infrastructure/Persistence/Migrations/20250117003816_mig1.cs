@@ -43,11 +43,11 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Artist = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FPath = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PlaylistId = table.Column<int>(type: "int", nullable: false),
-                    FavoriteId = table.Column<int>(type: "int", nullable: false)
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Artist = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FPath = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PlaylistId = table.Column<int>(type: "int", nullable: true),
+                    FavoriteId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -56,14 +56,12 @@ namespace Persistence.Migrations
                         name: "FK_Audios_Favorites_FavoriteId",
                         column: x => x.FavoriteId,
                         principalTable: "Favorites",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Audios_Playlists_PlaylistId",
                         column: x => x.PlaylistId,
                         principalTable: "Playlists",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
