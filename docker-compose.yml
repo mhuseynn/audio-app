@@ -41,21 +41,6 @@ services:
     networks:
       - app-network
 
-  react-app:
-    build:
-      context: .
-      dockerfile: audioui/Dockerfile
-    ports:
-      - "3000:8080" # Map port 5000 on host to port 5000 in the container
-    environment:
-      - NODE_ENV=production
-    volumes:
-      - ./src:/app/src  # Optional: to enable live reloading during development
-    command: npm run dev
-    networks:
-      - app-network
-
-
 networks:
   app-network:
     driver: bridge

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Audio.ApiGateWay2.props" />
-</Project>
