@@ -76,26 +76,36 @@
 // }
 
 // export default App;
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
 import LoginPage from './components/Login/Login';
 import RegisterPage from './components/Register/RegisterPage';
 import AudioList from './components/AudioList/AudioList.jsx';
 import CloudinaryUploadWidget from './components/CloudWidget.jsx';
-import HomePage from './components/HomePage.jsx';  // New home page for unauthenticated users
+import HomePage from './components/Home/Home.jsx';  // New home page for unauthenticated users
 
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  // Load authentication state from localStorage on app load
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      setIsAuthenticated(true); // User is authenticated if token exists
+    }
+  }, []);
+
   // Handler to log in the user
-  const handleLogin = () => {
+  const handleLogin = (token) => {
+    localStorage.setItem('authToken', token); // Store token in localStorage
     setIsAuthenticated(true);
   };
 
   // Handler to log out the user
   const handleLogout = () => {
+    localStorage.removeItem('authToken'); // Remove token from localStorage
     setIsAuthenticated(false);
   };
 
@@ -103,16 +113,15 @@ function App() {
     <>
       <Router>
         <Navbar onLogout={handleLogout} />
-        
         {/* Routes for different pages */}
         <Routes>
-
           <Route 
             path="/"
             element={isAuthenticated ? (
               <>
+               <CloudinaryUploadWidget />
                 <AudioList />
-                <CloudinaryUploadWidget />
+               
               </>
             ) : (
               <HomePage/>

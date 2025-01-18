@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from "axios";
+import './Button.css'
 
 const CloudinaryUploadWidget = () => {
 
@@ -26,7 +27,7 @@ const CloudinaryUploadWidget = () => {
 
           // Post the result to your API
           try {
-            const response = await axios.post("http://localhost:5123/audiowebapi/uploadaudio", {
+            const response = await axios.post("http://localhost:5004/audiowebapi/uploadaudio", {
               title,
               fpath,
             });
@@ -50,7 +51,7 @@ const CloudinaryUploadWidget = () => {
 
   return (
     <div>
-      <button onClick={openWidget}>Upload Audio to Cloudinary</button>
+      <button className='upload-button' onClick={openWidget}>Upload Audio</button>
     </div>
   );
 };

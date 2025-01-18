@@ -57,14 +57,15 @@
 // src/components/Navbar/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = ({ onLogout }) => {
   return (
-    <nav style={{ padding: '10px', backgroundColor: '#333', color: '#fff' }}>
-      <Link to="/" style={{ color: '#fff', marginRight: '15px' }}>Home</Link>
-      <Link to="/login" style={{ color: '#fff', marginRight: '15px' }}>Login</Link>
-      <Link to="/register" style={{ color: '#fff', marginRight: '15px' }}>Register</Link>
-      <button onClick={onLogout} style={{ color: '#fff', backgroundColor: '#333', border: 'none', cursor: 'pointer' }}>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/register">Register</Link>
+      <button onClick={onLogout}>
         Logout
       </button>
     </nav>

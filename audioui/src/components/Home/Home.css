@@ -1,0 +1,57 @@
+
+.maindiv {
+    display: flex;
+    background-color: black;
+    height: 100vh; 
+    gap: 100px;
+    justify-content: center; 
+    align-items: center; 
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .home-txts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+ }
+  
+  .home-h1 {
+    color: #00ffae;
+    text-align: left;
+    align-self: flex-start;
+    text-align: center;
+  }
+  
+  .home-p
+  {
+    color: white;
+    text-align: left;
+    size: 300px;
+  }
+  
+  
+  .home-button {
+    width:200px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid #00ffae;
+    color: #00ffae;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #00ffae;
+    color: black;
+  }
+  
+  
+  
