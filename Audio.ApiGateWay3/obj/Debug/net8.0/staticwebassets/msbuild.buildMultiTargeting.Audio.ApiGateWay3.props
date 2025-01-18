@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Audio.ApiGateWay3.props" />
+</Project>

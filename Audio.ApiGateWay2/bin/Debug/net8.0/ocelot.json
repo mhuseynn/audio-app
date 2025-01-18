@@ -1,0 +1,113 @@
+//{
+//  "Routes": [
+//    {
+//      "DownstreamPathTemplate": "/api/user/login",
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "identitymicroservice-1",
+//          "Port": 80
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/identity/login",
+//      "UpstreamHttpMethod": [ "POST" ]
+//    },
+//    {
+//      "DownstreamPathTemplate": "/api/user/register",
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "identitymicroservice-1",
+//          "Port": 80
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/identity/register",
+//      "UpstreamHttpMethod": [ "POST" ]
+//    },
+//    ////////
+//    {
+//      "DownstreamPathTemplate": "/api/audio/uploadaudio",
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "audiomicroservice-1",
+//          "Port": 80
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/audiowebapi/uploadaudio",
+//      "UpstreamHttpMethod": [ "POST" ]
+//    },
+//    ////////////////////////////////////
+//    {
+//      "DownstreamPathTemplate": "/api/audio/getallaudios",
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "audiomicroservice-1",
+//          "Port": 80
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/audiowebapi/getallaudios",
+//      "UpstreamHttpMethod": [ "GET" ]
+//    }
+//    /////////////////////////////////////////
+//  ],
+//  "GlobalConfiguration": {
+//    "BaseUrl": "http://localhost:32777"
+//  }
+//}
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/user/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identitymicroservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/identity/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "identitymicroservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/identity/register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/audio/uploadaudio",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "audiomicroservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/audiowebapi/uploadaudio",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/audio/getallaudios",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "audiomicroservice",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/audiowebapi/getallaudios",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}

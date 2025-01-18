@@ -8,7 +8,7 @@ const AudioList = () => {
     // Fetch audio data from the API
     const fetchAudios = async () => {
       try {
-        const response = await axios.get("http://localhost:5123/audiowebapi/getallaudios");
+        const response = await axios.get("http://localhost:5233/audiowebapi/getallaudios");
         console.log("Audios:", response.data);
         setAudios(response.data); 
       } catch (error) {

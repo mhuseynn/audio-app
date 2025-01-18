@@ -50,6 +50,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioAppWebApi", "Audio.Web
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "audioui", "AudioUI\audioui.esproj", "{4449B2AF-6712-4B92-86AE-D9518F859DBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio.ApiGateWay2", "Audio.ApiGateWay2\Audio.ApiGateWay2.csproj", "{1964F4BA-8731-410B-89A2-7AD9AF3EE01E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio.ApiGateWay3", "Audio.ApiGateWay3\Audio.ApiGateWay3.csproj", "{2019B259-E646-44E9-83B7-63B15FE61F83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +110,14 @@ Global
 		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4449B2AF-6712-4B92-86AE-D9518F859DBB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1964F4BA-8731-410B-89A2-7AD9AF3EE01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1964F4BA-8731-410B-89A2-7AD9AF3EE01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1964F4BA-8731-410B-89A2-7AD9AF3EE01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1964F4BA-8731-410B-89A2-7AD9AF3EE01E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2019B259-E646-44E9-83B7-63B15FE61F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2019B259-E646-44E9-83B7-63B15FE61F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2019B259-E646-44E9-83B7-63B15FE61F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2019B259-E646-44E9-83B7-63B15FE61F83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

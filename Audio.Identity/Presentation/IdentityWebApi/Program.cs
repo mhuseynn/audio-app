@@ -21,10 +21,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var connection = String.Empty;
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.Development.json");
+    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+}
+else
+{
+    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
+}
 
 //Add DBContext
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AudioIdentityDB;Integrated Security=True;Trust Server Certificate=True;"));
+    options.UseSqlServer(connection));
 
 //Repositories
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();

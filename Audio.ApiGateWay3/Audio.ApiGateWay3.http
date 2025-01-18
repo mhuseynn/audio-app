@@ -1,0 +1,6 @@
+@Audio.ApiGateWay3_HostAddress = http://localhost:5294
+
+GET {{Audio.ApiGateWay3_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

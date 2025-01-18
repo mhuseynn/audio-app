@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Audio.Identity\\Presentation\\IdentityWebApi\\IdentityWebApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Audio.WebApi\\Presentation\\AudioAppWebApi\\AudioAppWebApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Audio.ApiGateWay3\\Audio.ApiGateWay3.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

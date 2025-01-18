@@ -19,7 +19,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5123/identity/register', {
+      const response = await axios.post('http://localhost:5000/identity/register', {
         email,
         password
       });
@@ -31,6 +31,8 @@ const RegisterPage = () => {
     } catch (error) {
       if (error.response) {
         setErrorMessage(error.response.data.message || 'Registration failed!');
+        console.log(error.response.data.message);
+        
       } else {
         setErrorMessage('An error occurred. Please try again later.');
       }
