@@ -6,6 +6,7 @@ using Domain.DTOs;
 using System.Security.Principal;
 using System.IO;
 using Domain.Entities.Concretes;
+using System.Net.Http;
 
 namespace Infrastructure.Services;
 
@@ -14,18 +15,21 @@ public class AudioService : IAudioService
     //private readonly Cloudinary _cloudinary;
     private readonly IAudioRepository _audioRepository;
 
+
     public AudioService(IAudioRepository audioRepository)
     {
 
         _audioRepository = audioRepository;
+        
     }
 
-    public Task<string> DownloadAudioAsync(string path)
+    public async Task<string> DownloadAudioAsync(string path)
     {
         throw new NotImplementedException();
     }
 
-    
+
+
 
     public Task<string> GetAudioAsync()
     {

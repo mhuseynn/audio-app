@@ -7,14 +7,14 @@ const CloudinaryUploadWidget = () => {
   const openWidget = () => {
     const widget = window.cloudinary.createUploadWidget(
       {
-        cloudName: 'dznezukdy', // Your Cloudinary cloud name
-        uploadPreset: 'presetnedi', // Your upload preset
-        sources: ['local', 'url'], // You can specify sources
+        cloudName: 'dznezukdy', 
+        uploadPreset: 'presetnedi', 
+        sources: ['local', 'url'], 
         showAdvancedOptions: true,
-        cropping: true, // Optional if you want to enable cropping
-        multiple: false, // Set to true if you want multiple file uploads
-        resourceType: 'video', // Set to 'audio' for audio uploads
-        maxFileSize: 100000000, // Optional, limit file size (in bytes)
+        cropping: true, 
+        multiple: false, 
+        resourceType: 'video',
+        maxFileSize: 100000000, 
       },
       async(error, result) => {
         if (result && result.event === 'success') {
@@ -25,7 +25,7 @@ const CloudinaryUploadWidget = () => {
           console.log("Uploaded audio URL:", fpath);
           console.log("Audio title:", title);
 
-          // Post the result to your API
+          
           try {
             const response = await axios.post("http://localhost:5004/audiowebapi/uploadaudio", {
               title,
